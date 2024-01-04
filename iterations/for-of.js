@@ -53,3 +53,7 @@ const gameObj={
 for (const [game, value] of gameObj) {
     console.log(`${game} => ${value}`);
 }
+
+
+
+// For Off loop cannot work on objects

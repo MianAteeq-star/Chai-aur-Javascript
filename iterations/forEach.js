@@ -28,3 +28,5 @@ mycoding.forEach((lang)=>{
 console.log(lang.languageName);
 console.log(lang.languageFileName);
 })
+
+// For Each Loop cannot return any value
