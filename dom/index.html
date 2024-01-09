@@ -13,6 +13,13 @@
     <h2> Lorem ipsum dolor si Lorem ipsum, dolor sit amet consectetur adipisicing.    </h2>
     <p>Lorem ipsum dolor sit.</p>
     <input type="password" name="password" id="">
+
+
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
 </body>
 
 
@@ -53,13 +60,28 @@ title.style.borderRadius= "5px"
 // select by query Selector
 
 
-console.log(document.querySelector('h2'));
+// console.log(document.querySelector('h2'));
 
-console.log(document.querySelector('#title'));
-console.log(document.querySelector(".heading"));
+// console.log(document.querySelector('#title'));
+// console.log(document.querySelector(".heading"));
 
-console.log(document.querySelector("input"));
-console.log(document.querySelector("input[type=password]"));
+// console.log(document.querySelector("input"));
+
+
+// console.log(document.querySelector("input[type=password]"));
+
+
+const myul = document.querySelector("ul");
+const myli=myul.querySelector("li")
+myli.style.backgroundColor= "yellow"
+// console.log(myli);
+
+
+const selectAll = document.querySelectorAll('li')
+selectAll.forEach((list)=>{
+list.style.backgroundColor= "red"
+})
+console.log(selectAll);
 
 
 </script>
