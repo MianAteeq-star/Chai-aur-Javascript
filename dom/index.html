@@ -16,9 +16,9 @@
 
 
 <ul>
-    <li>one</li>
-    <li>two</li>
-    <li>three</li>
+    <li class="list-item">one</li>
+    <li class="list-item">two</li>
+    <li class="list-item">three</li>
 </ul>
 </body>
 
@@ -77,12 +77,24 @@ myli.style.backgroundColor= "yellow"
 // console.log(myli);
 
 
-const selectAll = document.querySelectorAll('li')
+const selectAll = document.querySelectorAll('li') //////// Node list milta hai is me
 selectAll.forEach((list)=>{
 list.style.backgroundColor= "red"
 })
-console.log(selectAll);
+// console.log(selectAll);
 
+const convertedNodeList = Array.from(selectAll)
+
+console.log(convertedNodeList);
+
+// Select by class name
+
+// console.log(document.getElementsByClassName("list-item"));   /// HTML Collection deta hai 
+
+ const convertedHtmlCollection= Array.from(document.getElementsByClassName('list-item'))
+
+
+ console.log(convertedHtmlCollection);
 
 </script>
 </html>
