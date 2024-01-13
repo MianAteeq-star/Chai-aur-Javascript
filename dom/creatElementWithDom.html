@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Creat Element With DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff; ">
+    
+</body>
+
+
+<script>
+
+    const myH1  = document.createElement("h1");
+
+    // myH1.innerText = "Created by Ateeq"
+    
+    myH1.className= "myMainClass"
+    myH1.id= "myId"
+    myH1.setAttribute("class","my")
+    myH1.setAttribute(  "id","created")
+    myH1.style.backgroundColor= "green"
+    myH1.style.color = "orange"
+    myH1.style.padding = "10px"
+    myH1.style.borderRadius="10px"
+
+    const addText = document.createTextNode("Created by Mian Ateeq")
+
+    myH1.appendChild(addText)
+     const printH1 = document.body.appendChild(myH1)
+</script>
+</html>
