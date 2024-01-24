@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-color: #212121;">
+    <nav class="text-center mt-5">
+        <a href="/Guess the Number Game/" class="text-white text-2xl">Home</a>
+    </nav>
+
+    <div class="text-center text-3xl text-yellow-300 mt-5">
+        Number Guessing Game
+    </div>
+
+    <div class="card bg-gray-500 p-4 roun   ded-lg  w-1/2 rounded-xl mx-auto mt-5">
+        <div class="text-white mb-5 text-center">
+            <p>Try and guess the random number between 1 and 100 </p>
+            <p>You have 10 attemps to guess the right number </p>
+        </div>
+        <div class=" flex justify-center items-center flex-col gap-7">
+            <div class="text-4xl">
+                Guess the Number Game
+            </div>
+            <div class="input">
+                <input class="p-2 rounded-xl " type="number" name="number" id="number">
+            </div>
+
+            <div class="submit  bg-blue-700 p-3 rounded-lg  ">
+                <input class="cursor-pointer" type="button" value="Submit Guess">
+            </div>
+
+            <div class="prev">
+                <p>Previous Guesses: <span class="previous text-white text-xl">2, 3, 4</span></p>
+                <p>Guess Remaining: <span class="remaining text-yellow-500 text-xl">10</span></p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
