@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
 <body style="background-color: #212121;">
@@ -17,13 +17,13 @@
         Number Guessing Game
     </div>
 
-    <div class="card bg-gray-500 p-4 roun   ded-lg  w-1/2 rounded-xl mx-auto mt-5">
+    <div class="card bg-gray-500 p-4 rounded-lg  w-52 md:w-1/2 lg:w-3/5  rounded-xl mx-auto mt-5">
         <div class="text-white mb-5 text-center">
             <p>Try and guess the random number between 1 and 100 </p>
             <p>You have 10 attemps to guess the right number </p>
         </div>
         <div class=" flex justify-center items-center flex-col gap-7">
-            <div class="text-4xl">
+            <div class="text-xl md:text-2xl lg:text-5xl">
                 Guess the Number Game
             </div>
             <div class="input">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="submit  bg-blue-700 p-3 rounded-lg  ">
-                <input class="cursor-pointer" type="button" value="Submit Guess">
+               <button class="cursor-pointer">Submit Guess</button>
             </div>
 
             <div class="prev">
