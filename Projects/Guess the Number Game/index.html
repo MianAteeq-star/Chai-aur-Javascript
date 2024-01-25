@@ -26,16 +26,21 @@
             <div class="text-xl md:text-2xl lg:text-5xl">
                 Guess the Number Game
             </div>
-            <div class="input">
-                <input class="p-2 rounded-xl " type="number" name="number" id="number">
-            </div>
+           <form >
+            <input class="rounded-xl border-none" type="number" id="userValue" >
+           
 
-            <div class="submit  bg-blue-700 p-3 rounded-lg  ">
-               <button class="cursor-pointer">Submit Guess</button>
+            <div class=" bg-blue-700 p-3 rounded-lg w-32  mt-5 m-auto text-center   ">
+             <input type="submit" value="Submit Guess" id="submitBtn" class="cursor-pointer hover:text-yellow-300">
             </div>
+           </form>
 
-            <div class="prev">
-                <p>Previous Guesses: <span class="previous text-white text-xl">2, 3, 4</span></p>
+           <div class="text-xl text-white text-center">
+            <p id="result"></p>
+           </div>
+
+            <div class="prev" id="prev">
+                <p>Previous Guesses: <span class="previous text-white text-xl" id="previous"></span></p>
                 <p>Guess Remaining: <span class="remaining text-yellow-500 text-xl">10</span></p>
             </div>
 
@@ -43,5 +48,6 @@
     </div>
 
 </body>
+<script src="script.js"></script>
 
 </html>
