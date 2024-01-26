@@ -34,7 +34,7 @@ function validate(userValue){
     } else {
 
         previousGuess.push(userValue)
-        if (remainingValues == 3) {
+        if (remainingValues == 11) {
             displayGuess(userValue)
             alertMessage(`Game over. Random number was ${randomNumber} `)
             endGame()
